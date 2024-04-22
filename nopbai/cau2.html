@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>cau2</title>
+</head>
+<body>
+<script>
+  function insertNumberToArray() {
+    let a = [];
+    let n = prompt("nhập số lượng phần tử trong mảng");
+    for (let j = 0; j < n; j++) {
+      let b = prompt("nhập phần tử thứ " + (j + 1));
+      a.push(b);
+    }
+    let index = parseInt(prompt("nhập vị trí"));
+    let x = prompt("nhập số thay thế ");
+    for (let i = 0; i < a.length; i++) {
+      if (index === parseInt(a[i])) {
+        a[i] = x;
+      }
+    }
+    alert(a);
+  }
+  insertNumberToArray();
+</script>
+</body>
+</html>

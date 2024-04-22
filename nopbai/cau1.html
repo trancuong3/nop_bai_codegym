@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>cau1</title>
+</head>
+<body>
+<script>
+  function findAvg() {
+    let a = [];
+    let n = parseInt(prompt("Nhập số lượng điểm "));
+    for (let i = 0; i < n; i++) {
+      let c = parseFloat(prompt("Nhập điểm thứ " + (i + 1)));
+      a.push(c);
+    }
+    let sum = 0;
+    for (let j = 0; j < a.length; j++) {
+      sum += parseFloat(a[j]);
+    }
+    let avg = sum / a.length;
+    alert(avg);
+  }
+  findAvg();
+</script>
+</body>
+</html>
